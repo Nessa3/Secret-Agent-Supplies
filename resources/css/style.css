@@ -1,0 +1,208 @@
+html{
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+  color: white;
+  line-height: 1.4;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1, h4 {
+  font-weight: bold;
+}
+
+div {
+  display: block;
+}
+
+/* header section */
+
+header {
+  background-color: black;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0rem 0.66rem 0.5rem
+}
+header img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+/* banner section */
+
+.banner {
+  background-image: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.headline {
+  background-color: black;
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+}
+
+.headline h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0.25rem 0rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+  .headline {
+    position: relative;
+    top: 10rem;
+    padding: 1rem 2rem;
+    width:100%;
+  }
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+}
+
+/*navigation bar */
+
+nav {
+  background-color: firebrick;
+}
+
+nav ul{
+  display: flex;
+  padding: 0.75rem 0rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-container {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  .mobile-container {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* items section */
+
+.items  {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.item {
+  width: 30%;
+}
+
+.photo {
+  display:flex;
+  padding: 2rem 0rem;
+  border: 4px solid black;
+  height: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .photo img {
+  max-width: 9rem;
+}
+
+.item .description {
+  display: block;
+  background-color: black;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .item {
+    width: 47%;
+  }
+  .glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .items {
+    flex-wrap: wrap;
+    width: 470px;
+  }
+  .item {
+    width: 90%;
+    margin: auto;
+  }
+  .watch {
+    display: none;
+  }
+}
+
+/* contact section*/
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.contact-info {
+  width: 35%;
+}
+
+.contact-info .title {
+  display: block;
+  background-color: black;
+  padding: 1rem 2rem;
+}
+
+.contact-info span {
+  color: black;
+}
+
+@media only screen and (max-width: 470px) {
+  .contact {
+    flex-wrap: wrap;
+  }
+  .contact-info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
+/* footer section*/
+
+footer {
+  background-color: black;
+  padding: 5rem 0rem;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width:470px) {
+  footer {
+    text-align: center;
+  }
+}
